@@ -8,6 +8,7 @@ public class Person{
 
     public Person(Person thePerson) {
 
+        // what the fuck this constructor supposed to do ?!
         thePerson.setName(getName());
 
     }
@@ -20,10 +21,7 @@ public class Person{
 
     public boolean equals(Person other)
     {
-        if (other == null)return false;
-        if (other == this) return true;
-
-        return false;
+        return other == this;
 
     }
 }
